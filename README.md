@@ -1,1 +1,1 @@
-# POLI_SCAN
+# PoliScan
