@@ -5,7 +5,7 @@ on:
     branches:
       - saiteja
       
-jobs:
+jobs:  
   deploy:
     runs-on: ubuntu-latest
 
