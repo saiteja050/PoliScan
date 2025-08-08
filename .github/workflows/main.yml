@@ -18,12 +18,42 @@ jobs:
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: ap-south-1  # or your region
+          aws-region: us-east-1  # or your region
 
       - name: Upload Glue script to S3 
         run: | 
-          aws s3 cp glue_jobs/glue_script.py s3://your-bucket-name/scripts/glue_script.py --region ap-south-1
+          aws s3 cp etl_scripts/lastglue.py s3://doneeeeeeeeeeeeeeeeeeeeee/master_of_master/lastglue.py
 
-      - name: Start Glue Job
+      - name: Start Glue Job lastglue
+        id: start_ingestion
         run: |
-          aws glue start-job-run --job-name your-glue-job-name --region ap-south-1
+          echo "Starting Glue job: lastglue"
+          RUN_ID=$(aws glue start-job-run \
+            --job-name lastglue \
+            --query 'JobRunId' \
+            --output text)
+          echo "Glue lastglue started with Run ID: $RUN_ID"
+          echo "run_id=$RUN_ID" >> $GITHUB_OUTPUT
+
+      - name: Wait for lastglue to complete
+        run: |
+          echo "Waiting for lastglue to complete..."
+          STATUS="STARTING"
+          while [[ "$STATUS" == "STARTING" || "$STATUS" == "RUNNING" || "$STATUS" == "STOPPING" ]]; do
+            STATUS=$(aws glue get-job-run \
+              --job-name lastglue \
+              --run-id ${{ steps.start_ingestion.outputs.run_id }} \
+              --query 'JobRun.JobRunState' \
+              --output text)
+            echo "Current status: $STATUS"
+            sleep 30
+          done
+
+          if [[ "$STATUS" != "SUCCEEDED" ]]; then
+            echo "Ingestion job failed with status: $STATUS"
+            exit 1
+          fi
+
+          echo "Ingestion job completed successfully."
+
+
