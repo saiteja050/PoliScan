@@ -20,8 +20,8 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ap-south-1  # or your region
 
-      - name: Upload Glue script to S3
-        run: |
+      - name: Upload Glue script to S3 
+        run: | 
           aws s3 cp glue_jobs/glue_script.py s3://your-bucket-name/scripts/glue_script.py --region ap-south-1
 
       - name: Start Glue Job
