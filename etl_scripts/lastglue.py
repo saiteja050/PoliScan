@@ -15,8 +15,8 @@ job = Job(glueContext)
 job.init(args['JOB_NAME'], args)
 
 # ----------------------------
-# Define Schemas
-# ----------------------------
+# Define SchemasFG
+# -------------------ERTY---------
 
 contribution_schema = StructType([
     StructField("CMTE_ID", StringType(), True),
