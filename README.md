@@ -13,7 +13,7 @@ POLISCAN solves this by creating an end-to-end big data analytics pipeline to cl
 •	 Support open, fair, and transparent campaign financing.
 
 Datasets Used
-All datasets are from the official Federal Election Commission (OpenFEC) source:
+All datasets are from the official Federal Election Commission (OpenFEC) source: 
 1.	Individual Contributions
 ➤ itcont.txt:
 Contains all individual contributions to committees.
