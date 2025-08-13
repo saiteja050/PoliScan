@@ -1,14 +1,13 @@
 # PoliScan
-POLYSCAN – Election Contributions Analytics 🇺🇸
+POLISCAN – Election Contributions Analytics 🇺🇸
 Problem Statement
 In the United States, political donations play a major role in shaping election outcomes, yet the data surrounding these contributions is vast, complex, and often difficult to analyze. Publicly available campaign finance data—such as that from the Federal Election Commission (FEC)—contains valuable insights about donor behavior and financial trends. However, raw datasets are large and not easily accessible for meaningful insights.
-POLYSCAN solves this by creating an end-to-end big data analytics pipeline to clean, transform, and analyze political contribution data at scale. This platform empowers analysts, regulators, journalists, and citizens to understand, explore, and monitor political funding with ease, clarity, and transparency.
+POLISCAN solves this by creating an end-to-end big data analytics pipeline to clean, transform, and analyze political contribution data at scale. This platform empowers analysts, regulators, journalists, and citizens to understand, explore, and monitor political funding with ease, clarity, and transparency.
 
  Project Objectives
 •	 Clean and prepare OpenFEC datasets for analytics.
 •	 Join and enrich contributions, committees, and candidate datasets.
 •	 Extract key features such as donation type, demographics, and geography.
-•	 Perform rule-based anomaly detection (non-ML).
 •	 Generate insights on donation behavior and trends.
 •	 Visualize political contributions and suspicious patterns through dashboards.
 •	 Support open, fair, and transparent campaign financing.
@@ -33,7 +32,12 @@ The entire solution is built using a scalable, cloud-based architecture on AWS, 
 •	Amazon S3: Raw and cleaned data storage
 •	AWS Glue (PySpark): ETL pipeline for transforming and joining datasets
 •	AWS Athena: Querying cleaned Parquet files
-•	Power BI / Tableau: Dashboard and reporting layer for insights
+•	Power BI : Dashboard and reporting layer for insights
+
+Architecture Diagram:
+
+<img width="826" height="723" alt="Screenshot 2025-08-13 135222" src="https://github.com/user-attachments/assets/f401c566-b540-41ca-8a90-9dc95765bc76" />
+
 
 Key KPIs & Metrics
 KPI	Description
@@ -43,7 +47,7 @@ Donor Retention Rate	% of repeat donors
 Contribution Frequency	Avg number of donations per donor
 Refund Rate	% of refunded donations
 Regional Distribution	Donations by state
-Donor Demographics	Breakdown by occupation, employer, gender
+Donor Demographics	Breakdown by occupation
 
 Expected Outcomes
 •	 Clean, structured, and queryable donation dataset
@@ -62,11 +66,8 @@ Key Features
 •	End-to-end pipeline: from raw data to visual insights.
 
 Conclusion
-POLYSCAN transforms raw and unmanageable political donation data into a powerful analytics tool. By enabling transparency and enhancing accessibility, it supports democratic processes and empowers citizens, analysts, and institutions to better understand how money flows in politics.
+POLISCAN transforms raw and unmanageable political donation data into a powerful analytics tool. By enabling transparency and enhancing accessibility, it supports democratic processes and empowers citizens, analysts, and institutions to better understand how money flows in politics.
 
-Architecture Diagram:
-
-<img width="826" height="723" alt="Screenshot 2025-08-13 135222" src="https://github.com/user-attachments/assets/f401c566-b540-41ca-8a90-9dc95765bc76" />
 
 DASHBOARD:
 
