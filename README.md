@@ -1,119 +1,122 @@
-# PoliScan
-POLISCAN – Election Contributions Analytics 🇺🇸
+📊 POLISCAN – Election Contributions Analytics 🇺🇸
+📝 1. Problem Statement
+In the United States, political donations play a major role in shaping election outcomes.
+While the Federal Election Commission (FEC) provides public campaign finance data, this data is:
 
-Problem Statement:
+📂 Extremely large in volume
 
-In the United States, political donations play a major role in shaping election outcomes, yet the data surrounding these contributions is vast, complex, and often difficult to analyze. Publicly available campaign finance data—such as that from the Federal Election Commission (FEC)—contains valuable insights about donor behavior and financial trends. However, raw datasets are large and not easily accessible for meaningful insights.
-POLISCAN solves this by creating an end-to-end big data analytics pipeline to clean, transform, and analyze political contribution data at scale. This platform empowers analysts, regulators, journalists, and citizens to understand, explore, and monitor political funding with ease, clarity, and transparency.
+🔍 Complex and hard to process directly
 
- Project Objectives:
- 
-•	 Clean and prepare OpenFEC datasets for analytics.
+⚙️ Challenging to turn into actionable insights
 
-•	 Join and enrich contributions, committees, and candidate datasets.
+💡 POLISCAN solves this by creating a scalable, cloud-based analytics platform that cleans, transforms, and analyzes political contribution data at scale — enabling analysts, regulators, journalists, and citizens to explore political funding with clarity and transparency.
 
-•	 Extract key features such as donation type, demographics, and geography.
+🎯 2. Project Objectives
+🧹 Clean and prepare OpenFEC datasets for analytics.
 
-•	 Generate insights on donation behavior and trends.
+🔗 Join and enrich contributions, committees, and candidates datasets.
 
-•	 Visualize political contributions and suspicious patterns through dashboards.
+📌 Extract key features like donation type, demographics, geography.
 
-•	 Support open, fair, and transparent campaign financing.
+🛡 Detect anomalies with rule-based checks (non-ML).
 
+📈 Analyze trends in donation behavior.
 
-Datasets Used:
+📊 Visualize contributions and patterns through interactive dashboards.
 
-All datasets are from the official Federal Election Commission (OpenFEC) source: 
+🏛 Support transparency in campaign financing.
 
-1.	Individual Contributions
-➤ itcont.txt: Contains all individual contributions to committees.
+📂 3. Datasets Used
+Source: Federal Election Commission – OpenFEC
 
-2.	Committee Master
-➤ cm.txt:Contains metadata about political committees.
-
-3.	Candidate Master
-➤ cn.txt:Contains candidate details including office, party, and election year.
-
+Dataset	File Name	Description
+Individual Contributions	itcont.txt	All individual contributions to committees
+Committee Master	cm.txt	Metadata about political committees
+Candidate Master	cn.txt	Candidate details: office, party, election year
 
 Relationships:
-•	Individuals ➝ Committees via CMTE_ID
-•	Committees ➝ Candidates via CAND_ID 
+
+👤 Individuals ➡ Committees via CMTE_ID
+
+🏛 Committees ➡ Candidates via CAND_ID
+
+☁ 4. System Architecture
+AWS Cloud Workflow:
 
 
-System Architecture:
-
-The entire solution is built using a scalable, cloud-based architecture on AWS, consisting of
-
-•	Amazon S3: Raw and cleaned data storage
-
-•	AWS Glue (PySpark): ETL pipeline for transforming and joining datasets
-
-•	AWS Athena: Querying cleaned Parquet files
-•	Power BI : Dashboard and reporting layer for insights
-
-
-Architecture Diagram:
-
-<img width="826" height="723" alt="Screenshot 2025-08-13 135222" src="https://github.com/user-attachments/assets/f401c566-b540-41ca-8a90-9dc95765bc76" />
+[Raw Data]
+    ↓
+📦 Amazon S3 (Raw Zone)
+    ↓
+⚙️ AWS Glue (PySpark ETL)
+    ↓
+📦 Amazon S3 (Cleaned Zone - Parquet)
+    ↓
+🔍 AWS Athena (SQL Queries)
+    ↓
+📊 Power BI / Tableau (Dashboards)
 
 
-Key KPIs & Metrics
+🖼 Architecture Diagram 
 
-KPI	Description:
+📌 5. Key KPIs & Metrics
+📊 KPI	📝 Description
+💰 Total Contributions	Total donation amount over a given time period
+📏 Average Donation Size	Mean value of donations
+🔄 Donor Retention Rate	% of repeat donors
+⏳ Contribution Frequency	Avg. number of donations per donor
+♻️ Refund Rate	% of refunded donations
+🗺 Regional Distribution	Donations segmented by state
+👥 Donor Demographics	Breakdown by occupation, employer, gender
 
-Total Contributions	Total donation amount over a time range
+🎯 6. Expected Outcomes
+✅ Clean, structured, and queryable dataset
 
-Average Donation Size	Mean value of donations
+📊 Interactive dashboards with KPIs
 
-Donor Retention Rate	% of repeat donors
+🌍 Donor insights by region, profession, and behavior
 
-Contribution Frequency	Avg number of donations per donor
+🏛 Transparent system for public & institutional use
 
-Refund Rate	% of refunded donations
+💼 7. Use Cases
+📈 Political Analysts – Track donation trends.
 
-Regional Distribution	Donations by state
+🗳 Campaign Teams – Optimize fundraising strategies.
 
-Donor Demographics	Breakdown by occupation
+👥 Public & Activists – Promote accountability.
 
+🚀 8. Key Features
+☁ Cloud-native AWS architecture
 
-Expected Outcomes
+🔄 End-to-end pipeline from raw to insights
 
-•	 Clean, structured, and queryable donation dataset
+📰 Stakeholder-focused design for analysts, journalists, and regulators
 
-•	 Interactive dashboard with KPIs
+📊 9. Dashboards
+Dashboard 1 – KPIs Overview
 
-•	 Donor analysis based on region, profession
+💰 Total Contributions
 
-•	 Transparent and explainable system for public and institutional use
+📏 Average Donation
 
+🔄 Retention Rate
 
- Use Cases
- 
-•	Political Analysts: Track donation trends and behaviors.
+Dashboard 2 – Donor Demographics
 
-•	Campaign Teams: Optimize fundraising and competitor insights.
+👩‍💼 Occupation Distribution
 
-•	Public & Activists: Drive accountability and transparency.
+🏢 Employer Statistics
 
+🚻 Gender Split
 
-Key Features
+Dashboard 3 – Geographic Insights
 
-•	Scalable and cloud-native using AWS services.
+🗺 US Map by State Donations
 
-•	Designed for real-world stakeholders: analysts, journalists, regulators.
+🏛 Party-wise Distribution
 
-•	End-to-end pipeline: from raw data to visual insights.
+🖼 Dashboard Screenshots (Placeholder)
+(Insert your real dashboard images here)
 
-
-Conclusion
-
-POLISCAN transforms raw and unmanageable political donation data into a powerful analytics tool. By enabling transparency and enhancing accessibility, it supports democratic processes and empowers citizens, analysts, and institutions to better understand how money flows in politics.
-
-
-DASHBOARD:
-
-<img width="1377" height="751" alt="image" src="https://github.com/user-attachments/assets/068ae842-e0d8-4151-af37-82940b39189f" />
-
-<img width="1339" height="736" alt="image" src="https://github.com/user-attachments/assets/2c3726f0-7c40-4257-b0d7-89d8c3a9d47c" />
-
-<img width="1373" height="749" alt="image" src="https://github.com/user-attachments/assets/90050855-84fa-4501-b0e0-5bb96fdce028" />
+🏁 10. Conclusion
+POLYSCAN transforms raw political donation data into clear, insightful, and accessible analytics By improving transparency and accountability, it empowers citizens, institutions, and decision-makers to understand how money flows in politics.
