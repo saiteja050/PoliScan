@@ -34,6 +34,7 @@ Relationships:
 
 System Architecture
 The entire solution is built using a scalable, cloud-based architecture on AWS, consisting of:
+
 •	Amazon S3: Raw and cleaned data storage
 •	AWS Glue (PySpark): ETL pipeline for transforming and joining datasets
 •	AWS Athena: Querying cleaned Parquet files
