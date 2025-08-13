@@ -64,11 +64,15 @@ Key Features
 Conclusion
 POLYSCAN transforms raw and unmanageable political donation data into a powerful analytics tool. By enabling transparency and enhancing accessibility, it supports democratic processes and empowers citizens, analysts, and institutions to better understand how money flows in politics.
 
+Architecture Diagram:
+
 <img width="826" height="723" alt="Screenshot 2025-08-13 135222" src="https://github.com/user-attachments/assets/f401c566-b540-41ca-8a90-9dc95765bc76" />
 
 DASHBOARD:
 <img width="1377" height="751" alt="image" src="https://github.com/user-attachments/assets/068ae842-e0d8-4151-af37-82940b39189f" />
+
 <img width="1339" height="736" alt="image" src="https://github.com/user-attachments/assets/2c3726f0-7c40-4257-b0d7-89d8c3a9d47c" />
+
 <img width="1373" height="749" alt="image" src="https://github.com/user-attachments/assets/90050855-84fa-4501-b0e0-5bb96fdce028" />
 
 
