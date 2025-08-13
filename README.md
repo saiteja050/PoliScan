@@ -20,14 +20,14 @@ POLISCAN solves this by creating an end-to-end big data analytics pipeline to cl
 Datasets Used
 All datasets are from the official Federal Election Commission (OpenFEC) source: 
 1.	Individual Contributions
-➤ itcont.txt:
-Contains all individual contributions to committees.
-2.	Committee Master
-➤ cm.txt:
-Contains metadata about political committees.
-3.	Candidate Master
-➤ cn.txt:
-Contains candidate details including office, party, and election year.
+➤ itcont.txt: Contains all individual contributions to committees.
+
+3.	Committee Master
+➤ cm.txt:Contains metadata about political committees.
+
+5.	Candidate Master
+➤ cn.txt:Contains candidate details including office, party, and election year.
+
 Relationships:
 •	Individuals ➝ Committees via CMTE_ID
 •	Committees ➝ Candidates via CAND_ID 
@@ -81,7 +81,3 @@ DASHBOARD:
 <img width="1339" height="736" alt="image" src="https://github.com/user-attachments/assets/2c3726f0-7c40-4257-b0d7-89d8c3a9d47c" />
 
 <img width="1373" height="749" alt="image" src="https://github.com/user-attachments/assets/90050855-84fa-4501-b0e0-5bb96fdce028" />
-
-
-
-
