@@ -1,7 +1,10 @@
 📊 POLISCAN – Election Contributions Analytics 🇺🇸
+
+
+
 📝 1. Problem Statement
-In the United States, political donations play a major role in shaping election outcomes.
-While the Federal Election Commission (FEC) provides public campaign finance data, this data is:
+
+In the United States, political donations play a major role in shaping election outcomes.While the Federal Election Commission (FEC) provides public campaign finance data, this data is:
 
 📂 Extremely large in volume
 
@@ -11,7 +14,10 @@ While the Federal Election Commission (FEC) provides public campaign finance dat
 
 💡 POLISCAN solves this by creating a scalable, cloud-based analytics platform that cleans, transforms, and analyzes political contribution data at scale — enabling analysts, regulators, journalists, and citizens to explore political funding with clarity and transparency.
 
+
+
 🎯 2. Project Objectives
+
 🧹 Clean and prepare OpenFEC datasets for analytics.
 
 🔗 Join and enrich contributions, committees, and candidates datasets.
@@ -24,12 +30,14 @@ While the Federal Election Commission (FEC) provides public campaign finance dat
 
 📊 Visualize contributions and patterns through interactive dashboards.
 
-🏛 Support transparency in campaign financing.
+
 
 📂 3. Datasets Used
+
 Source: Federal Election Commission – OpenFEC
 
 Dataset	File Name	Description
+
 Individual Contributions	itcont.txt	All individual contributions to committees
 Committee Master	cm.txt	Metadata about political committees
 Candidate Master	cn.txt	Candidate details: office, party, election year
@@ -41,8 +49,9 @@ Relationships:
 🏛 Committees ➡ Candidates via CAND_ID
 
 ☁ 4. System Architecture
-AWS Cloud Workflow:
 
+
+AWS Cloud Workflow:
 
 [Raw Data]
     ↓
@@ -60,16 +69,27 @@ AWS Cloud Workflow:
 🖼 Architecture Diagram 
 
 📌 5. Key KPIs & Metrics
+
 📊 KPI	📝 Description
+
 💰 Total Contributions	Total donation amount over a given time period
+
 📏 Average Donation Size	Mean value of donations
+
 🔄 Donor Retention Rate	% of repeat donors
+
 ⏳ Contribution Frequency	Avg. number of donations per donor
+
 ♻️ Refund Rate	% of refunded donations
+
 🗺 Regional Distribution	Donations segmented by state
+
 👥 Donor Demographics	Breakdown by occupation, employer, gender
 
+
+
 🎯 6. Expected Outcomes
+
 ✅ Clean, structured, and queryable dataset
 
 📊 Interactive dashboards with KPIs
@@ -78,21 +98,30 @@ AWS Cloud Workflow:
 
 🏛 Transparent system for public & institutional use
 
+
+
 💼 7. Use Cases
+
 📈 Political Analysts – Track donation trends.
 
 🗳 Campaign Teams – Optimize fundraising strategies.
 
 👥 Public & Activists – Promote accountability.
 
+
+
 🚀 8. Key Features
+
 ☁ Cloud-native AWS architecture
 
 🔄 End-to-end pipeline from raw to insights
 
 📰 Stakeholder-focused design for analysts, journalists, and regulators
 
+
+
 📊 9. Dashboards
+
 Dashboard 1 – KPIs Overview
 
 💰 Total Contributions
@@ -115,8 +144,9 @@ Dashboard 3 – Geographic Insights
 
 🏛 Party-wise Distribution
 
-🖼 Dashboard Screenshots (Placeholder)
-(Insert your real dashboard images here)
+🖼 Dashboard Screenshots 
+
+
 
 🏁 10. Conclusion
 POLYSCAN transforms raw political donation data into clear, insightful, and accessible analytics By improving transparency and accountability, it empowers citizens, institutions, and decision-makers to understand how money flows in politics.
