@@ -20,6 +20,7 @@ POLISCAN solves this by creating an end-to-end big data analytics pipeline to cl
 
 •	 Support open, fair, and transparent campaign financing.
 
+
 Datasets Used:
 
 All datasets are from the official Federal Election Commission (OpenFEC) source: 
@@ -33,9 +34,11 @@ All datasets are from the official Federal Election Commission (OpenFEC) source:
 3.	Candidate Master
 ➤ cn.txt:Contains candidate details including office, party, and election year.
 
+
 Relationships:
 •	Individuals ➝ Committees via CMTE_ID
 •	Committees ➝ Candidates via CAND_ID 
+
 
 System Architecture:
 
@@ -47,6 +50,7 @@ The entire solution is built using a scalable, cloud-based architecture on AWS, 
 
 •	AWS Athena: Querying cleaned Parquet files
 •	Power BI : Dashboard and reporting layer for insights
+
 
 Architecture Diagram:
 
@@ -71,6 +75,7 @@ Regional Distribution	Donations by state
 
 Donor Demographics	Breakdown by occupation
 
+
 Expected Outcomes
 
 •	 Clean, structured, and queryable donation dataset
@@ -81,6 +86,7 @@ Expected Outcomes
 
 •	 Transparent and explainable system for public and institutional use
 
+
  Use Cases
  
 •	Political Analysts: Track donation trends and behaviors.
@@ -89,6 +95,7 @@ Expected Outcomes
 
 •	Public & Activists: Drive accountability and transparency.
 
+
 Key Features
 
 •	Scalable and cloud-native using AWS services.
@@ -96,6 +103,7 @@ Key Features
 •	Designed for real-world stakeholders: analysts, journalists, regulators.
 
 •	End-to-end pipeline: from raw data to visual insights.
+
 
 Conclusion
 
