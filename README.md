@@ -6,10 +6,15 @@ POLISCAN solves this by creating an end-to-end big data analytics pipeline to cl
 
  Project Objectives
 •	 Clean and prepare OpenFEC datasets for analytics.
+
 •	 Join and enrich contributions, committees, and candidate datasets.
+
 •	 Extract key features such as donation type, demographics, and geography.
+
 •	 Generate insights on donation behavior and trends.
+
 •	 Visualize political contributions and suspicious patterns through dashboards.
+
 •	 Support open, fair, and transparent campaign financing.
 
 Datasets Used
