@@ -24,8 +24,6 @@ In the United States, political donations play a major role in shaping election 
 
 📌 Extract key features like donation type, demographics, geography.
 
-🛡 Detect anomalies with rule-based checks (non-ML).
-
 📈 Analyze trends in donation behavior.
 
 📊 Visualize contributions and patterns through interactive dashboards.
@@ -63,7 +61,7 @@ AWS Cloud Workflow:
     ↓
 🔍 AWS Athena (SQL Queries)
     ↓
-📊 Power BI / Tableau (Dashboards)
+📊 Power BI (Dashboards)
 
 
 🖼 Architecture Diagram 
@@ -144,9 +142,23 @@ Dashboard 3 – Geographic Insights
 
 🏛 Party-wise Distribution
 
-🖼 Dashboard Screenshots 
+🖼 Dashboard:
+
+About Fec:
+
+<img width="1326" height="749" alt="image" src="https://github.com/user-attachments/assets/69a789c3-909d-4024-ae1a-80040cc16dc9" />
+
+FEC Dashboard:
+
+<img width="1341" height="747" alt="image" src="https://github.com/user-attachments/assets/e530b901-fe03-44c7-abdc-d08af20db67b" />
+
+Dem and Rep Dashboard:
+
+<img width="1360" height="738" alt="image" src="https://github.com/user-attachments/assets/faa9e4ba-aef4-4782-958c-551b75d46645" />
+
 
 
 
 🏁 10. Conclusion
+
 POLYSCAN transforms raw political donation data into clear, insightful, and accessible analytics By improving transparency and accountability, it empowers citizens, institutions, and decision-makers to understand how money flows in politics.
