@@ -1,4 +1,4 @@
-📊 POLISCAN – Election Contributions Analytics 🇺🇸
+📊 POLISCAN – US Election Contribution Analytics
 
 
 
@@ -6,27 +6,27 @@
 
 In the United States, political donations play a major role in shaping election outcomes.While the Federal Election Commission (FEC) provides public campaign finance data, this data is:
 
-📂 Extremely large in volume
+Extremely large in volume
 
-🔍 Complex and hard to process directly
+Complex and hard to process directly
 
-⚙️ Challenging to turn into actionable insights
+Challenging to turn into actionable insights
 
-💡 POLISCAN solves this by creating a scalable, cloud-based analytics platform that cleans, transforms, and analyzes political contribution data at scale — enabling analysts, regulators, journalists, and citizens to explore political funding with clarity and transparency.
+POLISCAN solves this by creating a scalable, cloud-based analytics platform that cleans, transforms, and analyzes political contribution data at scale — enabling analysts, regulators, journalists, and citizens to explore political funding with clarity and transparency.
 
 
 
 🎯 2. Project Objectives
 
-🧹 Clean and prepare OpenFEC datasets for analytics.
+Clean and prepare OpenFEC datasets for analytics.
 
-🔗 Join and enrich contributions, committees, and candidates datasets.
+Join and enrich contributions, committees, and candidates datasets.
 
-📌 Extract key features like donation type, demographics, geography.
+Extract key features like donation type, demographics, geography.
 
-📈 Analyze trends in donation behavior.
+Analyze trends in donation behavior.
 
-📊 Visualize contributions and patterns through interactive dashboards.
+Visualize contributions and patterns through interactive dashboards.
 
 
 
@@ -42,9 +42,9 @@ Candidate Master	cn.txt	Candidate details: office, party, election year
 
 Relationships:
 
-👤 Individuals ➡ Committees via CMTE_ID
+Individuals ➡ Committees via CMTE_ID
 
-🏛 Committees ➡ Candidates via CAND_ID
+Committees ➡ Candidates via CAND_ID
 
 ☁ 4. System Architecture
 
@@ -65,6 +65,10 @@ AWS Cloud Workflow:
 
 
 🖼 Architecture Diagram 
+   
+    
+<img width="805" height="738" alt="image" src="https://github.com/user-attachments/assets/8ff53294-23c7-4d9d-9b18-873bb0bcea47" />
+ 
 
 📌 5. Key KPIs & Metrics
 
@@ -120,29 +124,6 @@ AWS Cloud Workflow:
 
 📊 9. Dashboards
 
-Dashboard 1 – KPIs Overview
-
-💰 Total Contributions
-
-📏 Average Donation
-
-🔄 Retention Rate
-
-Dashboard 2 – Donor Demographics
-
-👩‍💼 Occupation Distribution
-
-🏢 Employer Statistics
-
-🚻 Gender Split
-
-Dashboard 3 – Geographic Insights
-
-🗺 US Map by State Donations
-
-🏛 Party-wise Distribution
-
-🖼 Dashboard:
 
 About Fec:
 
@@ -155,7 +136,6 @@ FEC Dashboard:
 Dem and Rep Dashboard:
 
 <img width="1360" height="738" alt="image" src="https://github.com/user-attachments/assets/faa9e4ba-aef4-4782-958c-551b75d46645" />
-
 
 
 
