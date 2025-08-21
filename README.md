@@ -127,15 +127,18 @@ AWS Cloud Workflow:
 
 About Fec:
 
-<img width="1326" height="749" alt="image" src="https://github.com/user-attachments/assets/69a789c3-909d-4024-ae1a-80040cc16dc9" />
+<img width="1325" height="744" alt="image" src="https://github.com/user-attachments/assets/2e67f9e8-0c37-48e2-b52e-05d7c554ca4f" />
+
 
 FEC Dashboard:
 
-<img width="1341" height="747" alt="image" src="https://github.com/user-attachments/assets/e530b901-fe03-44c7-abdc-d08af20db67b" />
+<img width="1336" height="742" alt="image" src="https://github.com/user-attachments/assets/cdb92922-0b31-470f-90dc-78311e5237f9" />
+
 
 Dem and Rep Dashboard:
 
-<img width="1360" height="738" alt="image" src="https://github.com/user-attachments/assets/faa9e4ba-aef4-4782-958c-551b75d46645" />
+<img width="1359" height="747" alt="image" src="https://github.com/user-attachments/assets/1f0e11fd-564e-4a9c-8414-fdb666e66780" />
+
 
 
 
