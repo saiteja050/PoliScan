@@ -137,7 +137,7 @@ FEC Dashboard:
 
 Dem and Rep Dashboard:
 
-<img width="1359" height="747" alt="image" src="https://github.com/user-attachments/assets/1f0e11fd-564e-4a9c-8414-fdb666e66780" />
+<img width="1352" height="742" alt="image" src="https://github.com/user-attachments/assets/517d6b56-63e0-4596-80e9-ef997a0949d1" />
 
 
 
