@@ -132,7 +132,7 @@ About Fec:
 
 FEC Dashboard:
 
-![Uploading image.png…]()
+<img width="1326" height="740" alt="image" src="https://github.com/user-attachments/assets/cbb64422-019b-47f1-a9a5-1a7ce7350e53" />
 
 
 
